@@ -1,13 +1,10 @@
 package com.parkinglot;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import com.parkinglot.service.IProcessing;
+
+public class App {
+    public static void main(String[] args) {
+        IProcessing processing = ProcessingFactory.getProcessingInstance(args);
+        processing.process();
     }
 }
