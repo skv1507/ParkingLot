@@ -15,7 +15,7 @@ public class ParkingStatus extends ACommand {
         if (cars == null) {
             throw new RuntimeException("Invalid command.Initialized parking lot first");
         }
-        System.out.printf("Slot No.\tRegistration No\tColour\n");
+        System.out.printf("Slot No.\tRegistration No\t\tColour\n");
         for (Car car : cars) {
             if (car == null) continue;
             System.out.printf("%d\t\t%s\t\t%s\n", car.getSlotNumber(), car.getRegistrationNumber(), car.getColor());
